@@ -19,39 +19,7 @@ public class Kamera : MonoBehaviour
         Vector3 pos = GameObject.FindGameObjectWithTag("Player").transform.position;
         Vector3 KamaraPos = transform.position;
         
-        float eulerAngX = transform.localEulerAngles.x;
-        float eulerAngY = transform.localEulerAngles.y;
-        float eulerAngZ = transform.localEulerAngles.z;
 
-        transform.position = new Vector3(pos[0] - KamaraPos[0], pos[1] - KamaraPos[1], pos[2] - KamaraPos[2] - 7);
-
-
-        if (Input.GetAxis("Mouse X") < 0)
-        {
-            //Code for action on mouse moving left
-            transform.RotateAround(Sphere.transform.position, Vector3.up, 1);
-        }
-        if (Input.GetAxis("Mouse X") > 0)
-        {
-            //Code for action on mouse moving right
-            transform.RotateAround(Sphere.transform.position, Vector3.up, -1);
-        }
-
-        if (Input.GetAxis("Mouse Y") < 0)
-        {
-            //Code for action on mouse moving left
-            transform.RotateAround(Sphere.transform.position, Vector3.up, 1);
-        }
-        if (Input.GetAxis("Mouse Y") > 0)
-        {
-            //Code for action on mouse moving right
-            transform.RotateAround(Sphere.transform.position, Vector3.up, -1);
-        }
-
-    }
-
-    void Rotate()
-    {
-        
+        transform.position = new Vector3(pos[0], pos[1], pos[2]- 7);
     }
 }
