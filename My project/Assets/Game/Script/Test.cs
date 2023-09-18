@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Firstscript : MonoBehaviour
+public class Test : MonoBehaviour
 {
     Rigidbody rb;
     public float speed;
